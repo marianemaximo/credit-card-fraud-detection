@@ -1,0 +1,17 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5
+imbalanced-learn>=0.12
+lightgbm>=4.3
+xgboost>=2.0
+shap>=0.45
+matplotlib>=3.8
+seaborn>=0.13
+joblib>=1.4
+# para executar o notebook
+jupyter
+nbclient
+nbformat
+ipykernel
+pytest
