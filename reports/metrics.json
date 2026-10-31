@@ -1,0 +1,69 @@
+{
+  "fonte_dados": "SINTÉTICO (fallback)",
+  "modelo_final": "lgbm_iso",
+  "n_treino": 140000,
+  "n_teste": 60000,
+  "fraudes_treino": 280,
+  "fraudes_teste": 80,
+  "teste_pr_auc": {
+    "lgbm_iso (ajustado)": 0.7928,
+    "xgb (padrão)": 0.7819,
+    "lgbm (padrão)": 0.7741,
+    "rf (padrão)": 0.7706,
+    "Regressão Logística": 0.7216
+  },
+  "teste_pr_auc_final_IC95": [
+    0.7015,
+    0.8724
+  ],
+  "negocio": {
+    "Limiar global (modelo final)": {
+      "TP": 62.0,
+      "FP": 23.0,
+      "FN": 18.0,
+      "precision": 0.7294,
+      "recall": 0.775,
+      "recall_valor": 0.8678,
+      "custo": 1636.37,
+      "economia_liquida": 8746.73,
+      "economia_%": 84.2401
+    },
+    "Regra de Bayes por valor (modelo final)": {
+      "TP": 61.0,
+      "FP": 82.0,
+      "FN": 19.0,
+      "precision": 0.4266,
+      "recall": 0.7625,
+      "recall_valor": 0.8672,
+      "custo": 1956.19,
+      "economia_liquida": 8426.91,
+      "economia_%": 81.1599
+    },
+    "Limiar global (Reg. Logística)": {
+      "TP": 57.0,
+      "FP": 48.0,
+      "FN": 23.0,
+      "precision": 0.5429,
+      "recall": 0.7125,
+      "recall_valor": 0.8341,
+      "custo": 2157.3,
+      "economia_liquida": 8225.8,
+      "economia_%": 79.223
+    },
+    "Regra ingênua: maiores valores": {
+      "TP": 0.0,
+      "FP": 143.0,
+      "FN": 80.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "recall_valor": 0.0,
+      "custo": 11098.1,
+      "economia_liquida": -715.0,
+      "economia_%": -6.8862
+    }
+  },
+  "economia_limiar_global_IC95": [
+    72.54,
+    92.01
+  ]
+}
